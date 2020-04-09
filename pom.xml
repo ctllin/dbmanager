@@ -473,6 +473,6 @@
 
   </dependencies>
   <build>
-    <finalName>dbmanager</finalName>
+    <finalName>mysql</finalName>
   </build>
 </project>

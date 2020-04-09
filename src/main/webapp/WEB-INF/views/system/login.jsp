@@ -30,11 +30,11 @@
     	 document.getElementById("login_main_errortip").innerHTML="请输入密码!";
     	 return false;
      }
-      if( document.getElementById("captcha").value =="" ){
-    	  document.getElementById("login_main_errortip").innerHTML="请输入验证码!";
-    	  return false;
-     }
-      
+      <%--if( document.getElementById("captcha").value =="" ){--%>
+    	  <%--document.getElementById("login_main_errortip").innerHTML="请输入验证码!";--%>
+    	  <%--return false;--%>
+     <%--}--%>
+      <%----%>
      if(document.getElementById("username1").value.length>15 ){
     	  document.getElementById("login_main_errortip").innerHTML="请输入有效的用户名!";
     	  return false;
@@ -61,12 +61,12 @@
 				<div class="login_main_pw">
 					<input type="password" id="password1" name="password1"   />
 				</div>
-				<div class="login_main_yzm"    >
+			<%--	<div class="login_main_yzm"    >
 					  
 					<input type="text" id="captcha" name="captcha"/> 
 					<img alt="验证码" src="${ctx}/static/images/securityCode.jpg" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();"   />
 					 
-				</div>
+				</div>--%>
 				<div class="login_main_remb">
 					<input id="rm" name="rememberMe" type="hidden"/>  <!-- <label for="rm"><span>记住我</span></label> -->
 				</div>
